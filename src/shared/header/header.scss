@@ -1,0 +1,44 @@
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #343a40 !important;
+}
+.logoBox {
+  background: #28a745;
+  padding: 0.1em;
+  display: flex;
+  border-radius: 25px 25px 0 0;
+  margin: 5px;
+}
+.logo {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .logoBox {
+    display: none;
+  }
+}
+.menuLogo {
+  font-size: 2.5rem;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .menuLogo {
+    display: flex;
+    background: #28a745;
+    padding: 0.1em;
+    border-radius: 25px 25px 0 0;
+    margin: 5px;
+  }
+}
+.navlink {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 10px;
+  :active {
+    background-color: #343a404e;
+  }
+}
+.icon {
+  color: #fff;
+}
