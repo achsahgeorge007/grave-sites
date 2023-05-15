@@ -1,4 +1,4 @@
-.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+.css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   background-color: #343a40 !important;
 }
 .logoBox {
@@ -41,4 +41,24 @@
 }
 .icon {
   color: #fff;
+}
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .p {
+    line-height: 1;
+  }
+}
+.avatar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: #28a745;
+  color: #fff;
+  margin: 0 5px;
+  font-size: 24px;
+  align-items: center;
 }

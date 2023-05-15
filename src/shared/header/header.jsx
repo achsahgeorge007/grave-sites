@@ -34,8 +34,13 @@ function Header() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const user = {
+    firstName: "John",
+    lastName: "Snow",
+    position: "Muncipality Officer",
+  };
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div className="logoBox">
@@ -55,7 +60,7 @@ function Header() {
           >
             Grave Sites Management
           </Typography>
-          {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -101,7 +106,7 @@ function Header() {
                 </NavLink>
               ))}
             </Menu>
-          </Box> */}
+          </Box>
           <TbGrave2 className="menuLogo" />
           <Typography
             variant="h5"
@@ -141,9 +146,18 @@ function Header() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
+              </IconButton> */}
+              <div className="avatar">
+                <div className="avatar-icon">
+                  {user.firstName.charAt(0) + user.lastName.charAt(0)}
+                </div>
+                <div>
+                  <p>{user.firstName + " " + user.lastName}</p>
+                  <p>{user.position}</p>
+                </div>
+              </div>
             </Tooltip>
             {/* <Menu
               sx={{ mt: "45px" }}
